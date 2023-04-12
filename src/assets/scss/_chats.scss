@@ -1,0 +1,68 @@
+.chats {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0 $default-fill;
+  }
+}
+.chat {
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: $default-fill 0;
+    border-bottom: 1px solid $light-gray;
+  }
+  &__photo {
+    border-radius: $border-rounded;
+    margin-right: $default-fill;
+    width: $photo-dimensions;
+    height: $photo-dimensions;
+  }
+  &__container {
+    display: flex;
+    flex-grow: 1;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  &__content{
+    color: $gray;
+  }
+  &__name {
+    color: #000;
+    font-size: 1.2rem;
+    margin: 0 0 3px 0;;
+  }
+  &__text {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  &__text {
+    font-size: 1rem;
+    margin: 0;
+  }
+  &__time {
+    margin: 0;
+    color: $gray;
+    &--active {
+      color: $secondary;
+      font-weight: 600;
+    }
+  }
+  &__amount {
+    margin: 3px 0 0 0;
+    float: right;
+    text-align:center;
+    background-color: $secondary;
+    color: $white;
+    font-weight: 600;
+    font-size: .75rem;
+    line-height: 1.4rem;
+    border-radius: $border-rounded;
+    width: $badge-dimensions;
+    height: $badge-dimensions;
+  }
+}
