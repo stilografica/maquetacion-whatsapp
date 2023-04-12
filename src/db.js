@@ -5,7 +5,8 @@ export const messagesList = [
     short: '¿Quedamos mañana para cenar?',
     date: new Date,
     numMessages: 3,
-    id: 1263745
+    readConfirmation: false,
+    id: 12637
   },
   {
     name: 'José Meseguer',
@@ -13,6 +14,7 @@ export const messagesList = [
     short: 'Buenas tardes, escribía para saber cuándo podríamos vernos para la entrevista técnica',
     date: new Date,
     numMessages: 13,
+    readConfirmation: false,
     id: 96541
   },
   {
@@ -21,6 +23,7 @@ export const messagesList = [
     short: 'Holi! ¿Qué tal va la semana?',
     date: new Date,
     numMessages: 0,
+    readConfirmation: true,
     id: 96120
   }
 ]

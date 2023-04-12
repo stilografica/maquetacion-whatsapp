@@ -34,7 +34,12 @@ const currentItemMenu =ref('Chats')
         <div class="chat__container">
           <div class="chat__content">
             <h2 class="chat__name">{{ message.name }}</h2>
-            <p class="chat__text">{{ message.short }}</p>
+            <p class="chat__text">
+              <i class="material-icons chat__icon" :class="{'chat__icon--checked' : message.readConfirmation}"><span class="material-symbols-outlined">
+              done_all
+              </span></i>
+              {{ message.short }}
+            </p>
           </div>
           <div class="chat__extra">
             <p class="chat__time" :class="{ 'chat__time--active' : isActive(message.numMessages )}">{{ message.date.toLocaleTimeString('es-ES') }}</p>

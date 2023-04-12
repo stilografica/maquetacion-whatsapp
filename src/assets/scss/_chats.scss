@@ -39,10 +39,14 @@
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
     overflow: hidden;
-  }
-  &__text {
     font-size: 1rem;
     margin: 0;
+  }
+  &__icon {
+    vertical-align: middle;
+    &--checked {
+      color: $checked;
+    }
   }
   &__time {
     margin: 0;
